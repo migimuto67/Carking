@@ -1,0 +1,7 @@
+{
+  "name": "carking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
