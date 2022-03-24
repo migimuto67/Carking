@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-carking": {
+      "hosting": {
+        "app": [
+          "login-carking"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-carking"
+  }
+}

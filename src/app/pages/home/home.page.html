@@ -1,0 +1,106 @@
+<!--pantalla de inicio-->
+<ion-content class="fondo">
+  <!--logo--> 
+  <div id="contenedor-logo">
+    <img src="../../../assets/icon/logo.png" id="logo" >
+  </div>
+  <!--contenido de pantalla-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="12" size-lg="8">
+        <!--botones de inicio de sesion y registro-->
+        <ion-list class="buttons">
+          <br>
+          <br>
+          <!--redireccionar a la vista de login-->
+          <ion-button class="boton" routerLink="/login">
+            iniciar sesion
+          </ion-button>
+          <br>
+          <br>
+          <!--redireccionar a la vista de registro-->
+          <ion-button class="boton" routerLink="/register">
+            registrarse
+          </ion-button>
+          <br>
+        </ion-list>
+      </ion-col>
+      <ion-col size-sm="12" size-lg="4">
+
+          <ion-row>
+            <ion-col size="12">
+              <!--descripción de la pagina-->
+              <ion-card>
+                <!--encabezado de la descripción-->
+                <ion-card-header>
+                  <!--titulo de la descripción-->
+                  <ion-item>
+                    <ion-label>TU PARQUEADERO INTELIGENTE</ion-label>
+                  </ion-item>
+                </ion-card-header>
+                <ion-card-content>
+                  <!--descripción-->
+                  <ion-item>
+                    En Carking te ayudamos a reservar un espacio en nuestro parqueadero de una forma segura y rapida
+                  </ion-item>
+                  <ion-item>
+                    ¿Que esperas para reservar en nuestro parqueadero?
+                  </ion-item>
+                </ion-card-content>
+                  <br>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+      </ion-col>
+    </ion-row>
+    <br><br><br>
+    <!--imagenes de publicidad-->
+    <ion-row>
+      <!--imagen 1-->
+      <ion-col size-lg="4" size="12">
+        <img src="../../../assets/icon/map.jpg" class="img">
+      </ion-col>
+      <!--imagen 2-->
+      <ion-col size-lg="4" size="12">
+        <img src="../../../assets/icon/img1.jpg" class="img">
+      </ion-col>
+      <ion-col size-lg="4" size="12">
+        <!--imagen 3-->
+        <img src="../../../assets/icon/car1.jpg" class="img">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+<!--pie de pagina-->
+<footer>
+    <ion-grid>
+      <ion-row>
+        <!--copyright-->
+        <ion-col size="6">
+          <br>
+          <ion-title>©CarKing - 2022 <br> Mabel Diaz <br> Michael Muñoz <br> Felipe López</ion-title>
+          <br>
+        </ion-col>
+        <!--redes sociales-->
+        <ion-col size="6">
+          Encuentranos en:
+          <!--whatsapp-->
+          <ion-item>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-label> +57 318 8148366</ion-label>
+          </ion-item>
+          <!--instagram-->
+          <ion-item>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-label> carking2022</ion-label>
+          </ion-item>
+          <!--facebook-->
+          <ion-item>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-label> carking2022@gmail.com</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+</footer>

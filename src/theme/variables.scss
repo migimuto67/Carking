@@ -74,6 +74,30 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  .boton{
+    --background: rgb(67, 249, 255);
+    --color: #000000;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
+}
+//pantallas grandes
+@media only screen and (min-width : 901px){
+  .fondo{
+    --background:url(https://zimbronapps.com/wp-content/uploads/2017/07/Fondo-Negro-Patron-de-Luz-Abstrato_Fondos-de-Pantalla-Abstratos.jpg) 0 0/100% 100% no-repeat;
+
+  }
+}
+//pantallas pequeñas (celular o tablet)
+@media only screen and (max-width : 900px){
+  .fondo{
+    --background:url(https://i.pinimg.com/originals/55/01/ed/5501edf1c651bea1a08623a8d2999087.jpg) 0 0/100% 100% no-repeat;
+
+  }
 }
 
 @media (prefers-color-scheme: dark) {

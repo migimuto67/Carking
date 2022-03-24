@@ -1,0 +1,321 @@
+<!--vista realizar reserva-->
+<!--encabezado-->
+<ion-header>
+  <ion-toolbar>
+    <!--posicion del boton menu-->
+    <ion-buttons slot="end">
+      <!--llamar funcion desplegar menu-->
+      <ion-button (click)="mostrarMenuUser()">
+        <!--icono-->
+        <ion-icon slot="icon-only" name="menu" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!--titulo-->
+    <ion-title>Realiza tu reserva</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--contenido de la vista-->
+<ion-content class="fondo">
+  
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <br><br>
+        <!--card que contiene el formulario-->
+        <ion-card>
+          <ion-card-header>
+            <!--titulo del formulario de reserva-->
+            <ion-card-title class="header-card">REALIZA TU RESERVA</ion-card-title>
+          </ion-card-header>
+          <br><br><br><br>
+          <!--formulario de reserva-->
+          <form>
+            <ion-row>
+              <ion-col size="12" size-lg="6">
+                <br>
+                <!--campo nombre-->
+                <ion-item>
+                  <ion-label position="floating">Nombre<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="newReserve.nombre" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+                </ion-item>
+                <br><br>
+                <!--campo documento-->
+                <ion-item>
+                  <ion-label position="floating">Documento<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="newReserve.documento" [ngModelOptions]="{standalone: true}" type="number" inputmode="numeric" required></ion-input>
+                </ion-item>
+                <br><br>
+                <!--campo telefono-->
+                <ion-item>
+                  <ion-label position="floating">Telefono<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="newReserve.telefono" [ngModelOptions]="{standalone: true}" type="number" inputmode="numeric" required></ion-input>
+                </ion-item>
+                <br><br>
+                <ion-item>
+                  <!--campo placa del vehiculo-->
+                  <ion-label position="floating">Placa del vehiculo<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="newReserve.placa" [ngModelOptions]="{standalone: true}" type="text" required></ion-input>
+                </ion-item>
+                <br><br>
+                <!--campo fecha-->
+                <ion-item>
+                  <ion-label position="floating">Fecha de reserva:<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="newReserve.fecha" [ngModelOptions]="{standalone: true}" type="date" required></ion-input>
+                </ion-item>
+                <br><br>
+              </ion-col>
+              <ion-col size="12" size-lg="6">
+                <!--seleccionar espacio-->
+                <ion-item>
+                  <ion-label>espacio:<ion-text color="danger">*</ion-text></ion-label>
+                </ion-item>
+                <!--espacios a seleccionar-->
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-md="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                  <ion-col size="4" size-lg="1" size-sm="2">
+                    <img src="../../../assets/icon/espacio-disponible.png">
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <ion-button (click)="guardarReserva()" expand="block" class="boton">
+                  Confirmar
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </form>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>©CarKing - 2022 - Mabel Diaz - Michael Muñoz - Felipe López</ion-title>
+  </ion-toolbar>
+</ion-footer>

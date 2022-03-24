@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Verificación</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content *ngIf="user$ | async as user" class="fondo">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size-lg="3"></ion-col>
+      <ion-col size="12" size-lg="6">
+        <ion-card>
+          
+            <ion-row>
+              <ion-col>
+                <h2>Gracias por registrarte!</h2>
+                <p>te hemos enviado un correo de verificación a <strong>{{user.email}}</strong></p>
+                <p>por favor revisa tu correo electrónico y haz clic en el enlace para verificar tu dirección de correo electrónico</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button (click)="onSendEmail()" color="secondary" expand="block">
+                  Reenviar correo de verificación
+                </ion-button>
+              </ion-col>
+            </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size-lg="3"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

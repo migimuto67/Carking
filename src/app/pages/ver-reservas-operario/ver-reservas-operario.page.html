@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenuOperario()">
+        <ion-icon slot="icon-only" name="menu" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Reservas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <br>
+  <ion-button class="boton" routerLink="/reserve-operario">
+    Crear reserva
+  </ion-button>
+  <ion-card fixed>
+    <ion-list>
+      <ion-item>reserva</ion-item>
+      <ion-item>reserva</ion-item>
+      <ion-item>reserva</ion-item>
+      <ion-item>reserva</ion-item>
+      <ion-item>reserva</ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

@@ -1,3 +1,145 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <!--menu vista de usuario-->
+  <ion-menu side="end" menuId="menu-user" contentId="main" mode="md">
+
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/home-user">
+              <ion-icon slot="start" name="home"></ion-icon>
+              Inicio
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/reserve-user">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Reservar
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/map-user">
+              <ion-icon slot="start" name="location"></ion-icon>
+              como llegar
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/myreserve-user">
+              <ion-icon slot="start" name="calendar-outline"></ion-icon>
+              Mi reserva
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button (click)="logout()">
+              <ion-icon slot="start" name="log-out-outline"></ion-icon>
+              cerrar sesion
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  
+  <!--menu vista operario-->
+  <ion-menu side="end" menuId="menu-operario" contentId="main" mode="md">
+
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/home-operario">
+              <ion-icon slot="start" name="home"></ion-icon>
+              Inicio
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/reserve-operario">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Reservar
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/ver-reservas-operario">
+              <ion-icon slot="start" name="calendar-outline"></ion-icon>
+              Ver reservas
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+        <ion-item>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/home">
+              <ion-icon slot="start" name="log-out-outline"></ion-icon>
+              cerrar sesion
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+    <!--menu vista administrador-->
+    <ion-menu side="end" menuId="menu-admin" contentId="main" mode="md">
+
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-buttons slot="start">
+              <ion-button routerLink="/home-admin">
+                <ion-icon slot="start" name="home"></ion-icon>
+                Inicio
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+          <ion-item>
+            <ion-buttons slot="start">
+              <ion-button routerLink="/ingresos-admin">
+                <ion-icon slot="start" name="cash-outline"></ion-icon>
+                Ingresos
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+          <ion-item>
+            <ion-buttons slot="start">
+              <ion-button routerLink="/operarios-admin">
+                <ion-icon slot="start" name="people-outline"></ion-icon>
+                Operarios
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+          <ion-item>
+            <ion-buttons slot="start">
+              <ion-button routerLink="/reservas-admin">
+                <ion-icon slot="start" name="calendar"></ion-icon>
+                Reservas
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+          <ion-item>
+            <ion-buttons slot="start">
+              <ion-button routerLink="/home">
+                <ion-icon slot="start" name="log-out-outline"></ion-icon>
+                cerrar sesion
+              </ion-button>
+            </ion-buttons>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

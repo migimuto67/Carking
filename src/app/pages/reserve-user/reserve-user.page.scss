@@ -1,0 +1,16 @@
+.header-card{
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 7px 4px 5px rgb(96, 255, 218);
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+}
+ion-card{
+    background-color: transparentize($color: #000000, $amount: 0.3);
+}
+ion-item {
+    --background: rgba(0,0,0,0);
+    --border-color: rgba(0,0,0,0);
+}

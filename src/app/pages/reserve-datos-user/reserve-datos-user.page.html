@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenuUser()">
+        <ion-icon slot="icon-only" name="menu" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Reservar</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="fondo">
+  <br><br>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="0" size-lg="4"></ion-col>
+      <ion-col size-sm="12" size-lg="4">
+        <ion-card>
+          <ion-list>
+
+            <ion-item>
+              <ion-label>Nombre Completo</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Documento</ion-label>
+              <ion-input type=""></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Telefono</ion-label>
+              <ion-input type=""></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Tipo de vehiculo</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Placa</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Hora de entrada y salida</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+
+            <br>
+
+            <ion-button class="boton" routerLink="/reserve-conf-user">Continuar</ion-button>
+          
+          </ion-list>
+        </ion-card>
+      </ion-col>
+      <ion-col size-sm="0" size-lg="4"></ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>©CarKing - 2022 - Mabel Diaz - Michael Muñoz - Felipe López</ion-title>
+  </ion-toolbar>
+</ion-footer>

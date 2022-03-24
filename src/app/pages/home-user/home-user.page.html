@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+
+      <ion-buttons slot="end">
+        <ion-button (click)="mostrarMenuUser()">
+          <ion-icon slot="icon-only" name="menu" color="dark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      
+
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="fondo">
+  <ion-grid fixed>
+    <div id="contenedor-logo">
+        <img src="../../../assets/icon/logo.png" id="logo">
+    </div>
+
+  
+    <ion-row>
+      <ion-col size-lg="6" size-sm="12">
+        <ion-card>
+          <ion-item>
+            <ion-label>¿Como realizar una reserva?</ion-label>
+            <ion-icon slot="end" name="information-circle-outline"></ion-icon>
+          </ion-item>
+      
+          <ion-card-content>
+            Reservar en Carking es muy facil, solo debes dar click en la opcion de reservar y seguir el paso a paso.
+            <br><br><br>
+            <ion-button class="boton" routerLink="/reserve-user">RESERVAR</ion-button>
+            <br><br>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+      <ion-col size="12" size-lg="6">
+        <ion-card>
+          <ion-item>
+            <ion-label>¿No sabes como llegar?</ion-label>
+            <ion-icon slot="end" name="information-circle-outline"></ion-icon>
+          </ion-item>
+
+          <ion-card-content>
+            Podras encontrarnos facilmente, solo sigue la ruta de navegacion en nuestro mapa una vez hecha tu reserva.
+            <br><br><br>
+            <ion-button class="boton" routerLink="/map-user">Geolocalización</ion-button>
+            <br><br>
+          </ion-card-content>  
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
+<footer>
+  <ion-grid>
+    <ion-row>
+      <!--copyright-->
+      <ion-col size="6">
+        <br>
+        <ion-title>©CarKing - 2022 <br> Mabel Diaz <br> Michael Muñoz <br> Felipe López</ion-title>
+        <br>
+      </ion-col>
+      <!--redes sociales-->
+      <ion-col size="6">
+        Encuentranos en:
+        <!--whatsapp-->
+        <ion-item>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-label> +57 318 8148366</ion-label>
+        </ion-item>
+        <!--instagram-->
+        <ion-item>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-label> carking2022</ion-label>
+        </ion-item>
+        <!--facebook-->
+        <ion-item>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-label> carking2022@gmail.com</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</footer>
